@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Total Costs</title>
+    <link href="Styles/totalCosts.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="myScripts/totalCostScript.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading text-center text-uppercase">
+        <h2>Calculate Your Total Cost</h2>
+      </div>
+
+      <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="itemName">Enter the item's name</label>
+            <input type="text" class="form-control" id="itemName" placeholder="Chocolate Bar"/>
+          </div>
+
+          <div class="form-group">
+            <label for="costPer">Enter Cost per item</label>
+            <input type="text" class="form-control" id="itemCost" placeholder="1.99"/>
+          </div>
+
+          <div class="form-group">
+            <label for="Quantity">Enter quantity of said item</label>
+            <input type="text" class="form-control" id="itemQuantity" placeholder="13" />
+          </div>
+
+          <div class="form-group">
+            <label for="taxRate">Enter the expected tax rate (%)</label>
+            <input type="text" class="form-control" id="taxRate" placeholder="8.25" />
+          </div>
+
+          <div class="form-group text-center">
+            <input type="button" class="btn btn-primary text-uppercase" value="Submit" onclick="btnClick()" />
+
+          </div>
+        </form>
+      </div>
+
+      <div id="output" class="text-center" style="height:150px;"></div>
+
+
+    </div>
+  </div>
+
+</body>
+</html>
